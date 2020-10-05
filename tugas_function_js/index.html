@@ -1,21 +1,406 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <title>Penjualan Barang</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate&family=Fredoka+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate&family=Fredoka+One&family=Press+Start+2P&display=swap');
+            .navbar {
+                background-color: #00BFFF;
+                font-family: 'Fredoka One', cursive;
+                font-size: 30px;
+                text-align: center;
+            }
 
-    <title>Penjualan Barang</title>
-</head>
-<body>
-    <h1>hi</h1>
-</body>
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: 0.3s;
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">MOUSE Sale</nav>
+        <div class="container mt-5">
+            <h5 class="container-fluid p-2 mb-3"
+                style="background-color:#0865c0; color: #ffffff; font-weight: bold;">Product Mouse Rexus</h5>
+            <div class="row">
+                <div class="col" style="display: flex;text-align: center;">
+                    <div class="card">
+                        <img src="https://rexus.id/wp-content/uploads/2018/09/Rexus-X8_01-1.jpg"
+                            class="card-img-top" alt="ini gambar." width="50%">
+                        <div class="card-body">
+                            <h5 class="card-title">Rexus Xierra X8</h5>
+                            <p class="card-text">Rp 100.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="display: flex;text-align: center;">
+                    <div class="card">
+                        <img src="https://rexus.id/wp-content/uploads/2019/02/G10_01-1.jpg"
+                            class="card-img-top" alt="ini gambar." width="50%">
+                        <div class="card-body">
+                            <h5 class="card-title">Rexus Xierra G10</h5>
+                            <p class="card-text">Rp 175.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="display: flex;text-align: center;">
+                    <div class="card">
+                        <img src="https://rexus.id/wp-content/uploads/2019/08/X12_02.jpg"
+                            class="card-img-top" alt="ini gambar." width="50%">
+                        <div class="card-body">
+                            <h5 class="card-title">Rexus Xierra X12</h5>
+                            <p class="card-text">Rp 250.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="display: flex;text-align: center;">
+                    <div class="card">
+                        <img src="https://rexuszone.id/wp-content/uploads/2019/02/G7_04.jpg"
+                            class="card-img-top" alt="ini gambar." width="50%">
+                        <div class="card-body">
+                            <h5 class="card-title">Rexus Xierra G7</h5>
+                            <p class="card-text">Rp 200.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form name="pembeli" style="margin-top: 8%;">
+                <div class="form-group">
+                    <div class="row">
+
+                        <!-- BAG INPUT! -->
+                        <div class="col-sm">
+                            <div class="card text-white">
+                                <h5 class="card-header bg-primary text-center" style="font-size: 2em; font-family: 'Press Start 2P', cursive;">Form Input</h5>
+                                <div class="card-body">
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <td>Nama Pembeli:</td>
+                                            <td><input class="form-control" type="text" name="nama" id="namapembeli">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nama Barang:</td>
+                                            <td>
+                                                <!-- <select name="pilihbarang" id="barang" class="form-control"
+                                                    onchange="selectItem()">
+                                                    <option></option>
+                                                    <option value="rexus xiera 107">Rexus Xierra 107</option>
+                                                    <option value="xierrax8">Rexus Xierra X8</option>
+                                                    <option value="xierrag10">Rexus Xierra G10</option>
+                                                    <option value="xierrax12">Rexus Xierra X12</option>
+                                                    <option value="xierrag7">Rexus Xierra G7</option>
+                                                </select> -->
+                                                <!-- <select style="cursor: pointer;" id="selectNumber" class="form-control">
+
+                                                </select> -->
+                                                <!-- show pop up table product -->
+                                                <input placeholder="Select Product" type="text" data-toggle="modal"
+                                                    data-type="pilih-product" data-target="#Mproduct"
+                                                    style="cursor:pointer;" name="barang" id="barang"
+                                                    class="form-control input-sm" readonly="readonly">
+                                                <!-- end show pop up table product -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Harga Barang:</td>
+                                            <td>
+                                                <input type="text" readonly class="form-control" id="price">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jumlah Barang:</td>
+                                            <td><input class="form-control" type="number" name="jumlahbarang" id="jumlahbarang">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Total:</td>
+                                            <td><input readonly class="form-control" type="text" name="harga"
+                                                    id="harga"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Uang Tunai:</td>
+                                            <td><input class="form-control" type="text" name="inputbayar" id="inputbayar"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <input type="button" class="form-control btn-outline-primary" value="Hitung Total Harga"
+                                                    onclick="hitungtotal()">
+                                            </td>
+                                        </tr>
+
+
+                                        <td colspan="2">
+                                            <input class="form-control btn-outline-dark" type="button" value="Bayar"
+                                                id="uangdiberikan" onclick="hitungkembalian()">
+                                        </td>
+
+                                        <tr>
+                                            <td><label>Kembalian:</label></td>
+                                            <td><input class="form-control" type="text" name="inputkembalian"
+                                                    id="kembalian">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="row">
+                                                    <div class="col-sm">
+                                                        <button type='button' class='btn btn-outline-primary col-sm-11' onclick='selectedSave("+ JSON.stringify(item)+ ")'>Beli</button>
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <input class="form-control btn-outline-danger" type="reset"
+                                                            value="Hapus">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        &emsp;
+                        &emsp;
+                        <!-- BAG OUTPUT! -->
+                        <div class="col-sm">
+                            <div class="card text-white">
+                                <h5 class="card-header bg-primary text-center" style="font-size: 2em; font-family: 'Press Start 2P', cursive;">Output</h5>
+                                <div class="card-body">
+                                    <table class="table table-borderless" id="hasil">
+                                        <tr>
+                                            <td>Nama Pembeli</td>
+                                            <td><input class="form-control" id="namepembelitable" type="text" disabled>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Nama Barang</td>
+                                            <td><output class="form-control" id="namebarangtable" type="text" disabled>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Jumlah Barang</td>
+                                            <td><output class="form-control" id="jmlbarangtabel" type="text" disabled>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Total Harga</td>
+                                            <td><output class="form-control" id="tothargatable" type="text" disabled>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Dibayar</td>
+                                            <td><output class="form-control" id="dibayartable" type="text" disabled>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Kembalian</td>
+                                            <td><output class="form-control" id="kembaliantable" type="text" disabled->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal fade in product" tabindex="-1" id="Mproduct" role="dialog" data-keyboard="false"
+            data-backdrop="static">
+            <div class="modal-dialog modal-detail" role="document" style="width:1000px;">
+                <div class="modal-content">
+                    <div class="col-xs-1 col-xs-offset-11">
+                        <button type="button" class="close" title="Close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true" style="font-size: 30px">&times;</span></button>
+                    </div>
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="title-detail">Select Product</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th align="center">Product Name</th>
+                                        <th align="center">Price</th>
+                                        <th align="center">Tools</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableListProduct">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
 </html>
+<script>
+    //data product
+    var listProduct = [{
+            "name": "Rexus Xierra X8",
+            "val": "Rexus Xierra X8",
+            "price": 100000,
+        },
+        {
+            "name": "Rexus Xierra G10",
+            "val": "Rexus Xierra G10",
+            "price": 175000,
+        },
+        {
+            "name": "Rexus Xierra X12",
+            "val": "Rexus Xierra X12",
+            "price": 250000,
+        },
+        {
+            "name": "Rexus Xierra G7",
+            "val": "Rexus Xierra G7",
+            "price": 200000,
+        },
+    ];
+    // end data product
+
+    // looping and render data product to list table
+    var select = document.getElementById("tableListProduct");
+    var html = '';
+    listProduct.forEach(loopProduct);
+
+    function loopProduct(item, index) {
+        html += "<tr>";
+        html += "<td>" + item.name + "</td>";
+        html += "<td>" + item.price + "</td>";
+        html += "<td>" + "<button type='button' class='btn btn-primary' onclick='selectedProduct(" + JSON.stringify(
+                item) +
+            ")'>+</button>" +
+            "</td>";
+    }
+    select.innerHTML = html;
+    // end  looping and render data product to list table
+
+
+    // select product
+    function selectedProduct(params) {
+        $("#barang").val(params.name);
+        $("#price").val(params.price);
+        $('#Mproduct').modal('hide');
+    }
+    // end select product
+
+    // hitung harga total
+    function hitungtotal() {
+        var form = document.pembeli;
+        var hargamouse = $("#price").val();
+        // var nmbarang = form.pilihbarang.value;
+        var nmbarang = $("#barang").val();
+        var jumlahbeli = eval(form.jumlahbarang.value);
+
+        // logika penentu diskon
+        if (jumlahbeli >= 5) {
+            var disc = 0.06 * hargamouse;
+        } else if (jumlahbeli < 5 && jumlahbeli >= 3) {
+            var disc = 0.05 * hargamouse;
+        } else {
+            var disc = 0;
+        }
+        // end logika penentuan diskon
+        // render harga
+        // var harga = hargamouse - disc;
+        var harga = hargamouse * jumlahbeli;
+        $("#harga").val(harga);
+        // render harga
+    }
+    // end hitung harga total
+    
+    var listInput = [{
+        "namepembeli": "",
+        "barang": "",
+        "jmlbarang":"",
+        "harga":"",
+        "inptbayar":"",
+        "kembalian":"",
+        
+    }];
+    var select = document.getElementById("listSave");
+    var html = '';
+    listInput.forEach(loopSave);
+    function loopSave(item, index) {
+        html += "<td>" + item.namepembeli + "</td>";
+        html += "<td>" + item.barang + "</td>";
+        html += "<td>" + item.jmlbarang + "</td>";
+        html += "<td>" + item.harga + "</td>";
+        html += "<td>" + item.inptbayar + "</td>";
+        html += "<td>" + item.kembalian + "</td>";
+    }
+    select.innerHTML = html;
+    function selectedSave(params) {
+        $("#namapembeli").val();
+        $("#barang").val();
+        $("#jumlahbarang").val();
+        $("#harga").val();
+        $("#inputbayar").val();
+        $("#kembalian").val();
+        
+    }
+    // function simpan() {
+        // var namepembeli = document.getElementById("namapembeli").value;
+        // var barangname = document.getElementById("barang").value;
+        // var jmlbarang = document.getElementById("jumlahbarang").value;
+        // var totalhrg = document.getElementById("harga").value;
+        // var byr = document.getElementById("inputbayar").value;
+        // var kembali = document.getElementById("kembalian").innerHTML
+
+    //     document.getElementById("namepembelitable").innerHTML += "<tr>" + namepembeli + "</tr>"
+    //     document.getElementById("namebarangtable").innerHTML += "<tr>" + barangname + "</tr>"
+    //     document.getElementById("jmlbarangtable").innerHTML += "<tr>" + jmlbarang + "</tr>"
+    //     document.getElementById("tothargatable").innerHTML += "<tr>" + totalhrg + "</tr>"
+    //     document.getElementById("bayartable").innerHTML += "<tr>" + byr + "</tr>"
+    //     document.getElementById("kembaliantable").innerHTML += "<tr>" + kembali + "</tr>"
+    // }
+
+
+    function hitungkembalian() {
+        var total = (document.pembeli.harga.value);
+        var uangbayar = (document.pembeli.inputbayar.value);
+        var kembalian = 0.0;
+
+        kembalian = uangbayar - total;
+
+        document.pembeli.inputkembalian.value = eval(kembalian);
+    }
+</script>
+<!-- Image and text -->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
