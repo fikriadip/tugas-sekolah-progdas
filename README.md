@@ -1,2 +1,2 @@
-# Tugas-Sekolah-Progdas
+# tugas-sekolah-progdas
 Pengumpulan Tugas
