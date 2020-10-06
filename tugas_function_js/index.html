@@ -33,7 +33,7 @@
     <body>
         <nav class="navbar">MOUSE Sale</nav>
         <div class="container mt-5">
-            <h5 class="container-fluid p-2 mb-3"
+            <h5 class="container-fluid fontbaru p-2 mb-3"
                 style="background-color:#0865c0; color: #ffffff; font-weight: bold;">Product Mouse Rexus</h5>
             <div class="row">
                 <div class="col" style="display: flex;text-align: center;">
@@ -49,7 +49,7 @@
                 <div class="col" style="display: flex;text-align: center;">
                     <div class="card">
                         <img src="https://rexus.id/wp-content/uploads/2019/02/G10_01-1.jpg"
-                            class="card-img-top" alt="ini gambar." width="50%">
+                            class="card-img-top" alt="..." width="50%">
                         <div class="card-body">
                             <h5 class="card-title">Rexus Xierra G10</h5>
                             <p class="card-text">Rp 175.000</p>
@@ -69,7 +69,7 @@
                 <div class="col" style="display: flex;text-align: center;">
                     <div class="card">
                         <img src="https://rexuszone.id/wp-content/uploads/2019/02/G7_04.jpg"
-                            class="card-img-top" alt="ini gambar." width="50%">
+                            class="card-img-top" alt="..." width="50%">
                         <div class="card-body">
                             <h5 class="card-title">Rexus Xierra G7</h5>
                             <p class="card-text">Rp 200.000</p>
@@ -77,6 +77,7 @@
                     </div>
                 </div>
             </div>
+
             <form name="pembeli" style="margin-top: 8%;">
                 <div class="form-group">
                     <div class="row">
@@ -88,7 +89,7 @@
                                 <div class="card-body">
                                     <table class="table table-borderless">
                                         <tr>
-                                            <td>Nama Pembeli:</td>
+                                            <td>Nama Pemesan:</td>
                                             <td><input class="form-control" type="text" name="nama" id="namapembeli">
                                             </td>
                                         </tr>
@@ -112,7 +113,8 @@
                                         </tr>
                                         <tr>
                                             <td>Jumlah Barang:</td>
-                                            <td><input class="form-control" type="number" name="jumlahbarang" id="jumlahbarang">
+                                            <td><input class="form-control" id="qty_request" type="number"
+                                                    name="jumlahbarang">
                                             </td>
                                         </tr>
 
@@ -124,12 +126,13 @@
 
                                         <tr>
                                             <td>Uang Tunai:</td>
-                                            <td><input class="form-control" type="text" name="inputbayar" id="inputbayar"></td>
+                                            <td><input class="form-control" type="text" id="uang_tunai"
+                                                    name="inputbayar"></td>
                                         </tr>
                                         <tr>
                                             <td colspan="2">
-                                                <input type="button" class="form-control btn-outline-primary" value="Hitung Total Harga"
-                                                    onclick="hitungtotal()">
+                                                <button type="button" class="form-control btn-outline-dark"
+                                                    onclick="hitungtotal()">Total</button>
                                             </td>
                                         </tr>
 
@@ -141,8 +144,7 @@
 
                                         <tr>
                                             <td><label>Kembalian:</label></td>
-                                            <td><input class="form-control" type="text" name="inputkembalian"
-                                                    id="kembalian">
+                                            <td><input class="form-control" type="text" id="kembalian">
                                             </td>
                                         </tr>
 
@@ -150,10 +152,11 @@
                                             <td colspan="2">
                                                 <div class="row">
                                                     <div class="col-sm">
-                                                        <button type='button' class='btn btn-outline-primary col-sm-11' onclick='selectedSave("+ JSON.stringify(item)+ ")'>Beli</button>
+                                                        <input class="form-control btn-outline-dark" type="button"
+                                                            value="Beli" onclick="simpan()"><br>
                                                     </div>
                                                     <div class="col-sm">
-                                                        <input class="form-control btn-outline-danger" type="reset"
+                                                        <input class="form-control btn-outline-dark" type="reset"
                                                             value="Hapus">
                                                     </div>
                                                 </div>
@@ -165,7 +168,7 @@
                         </div>
                         &emsp;
                         &emsp;
-                        <!-- BAG OUTPUT! -->
+                        <!-- BAGIAN OUTPUT! -->
                         <div class="col-sm">
                             <div class="card text-white">
                                 <h5 class="card-header bg-primary text-center" style="font-size: 2em; font-family: 'Press Start 2P', cursive;">Output</h5>
@@ -173,37 +176,38 @@
                                     <table class="table table-borderless" id="hasil">
                                         <tr>
                                             <td>Nama Pembeli</td>
-                                            <td><input class="form-control" id="namepembelitable" type="text" disabled>
+                                            <td><input class="form-control" id="nama_pembeli" type="text" disabled>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td>Nama Barang</td>
-                                            <td><output class="form-control" id="namebarangtable" type="text" disabled>
+                                            <td><output class="form-control" id="nama_barang" type="text" disabled>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td>Jumlah Barang</td>
-                                            <td><output class="form-control" id="jmlbarangtabel" type="text" disabled>
+                                            <td><output class="form-control" id="qty" type="text" disabled>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td>Total Harga</td>
-                                            <td><output class="form-control" id="tothargatable" type="text" disabled>
+                                            <td><output class="form-control" id="total_harga_barang" type="text"
+                                                    disabled>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td>Dibayar</td>
-                                            <td><output class="form-control" id="dibayartable" type="text" disabled>
+                                            <td><output class="form-control" id="dibayar" type="text" disabled>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td>Kembalian</td>
-                                            <td><output class="form-control" id="kembaliantable" type="text" disabled->
+                                            <td><output class="form-control" id="hasil_kembalian" type="text" disabled->
                                             </td>
                                         </tr>
                                     </table>
@@ -308,76 +312,54 @@
 
         // logika penentu diskon
         if (jumlahbeli >= 5) {
-            var disc = 0.06 * hargamouse;
+            var disc = 0.20 * hargamouse;
         } else if (jumlahbeli < 5 && jumlahbeli >= 3) {
-            var disc = 0.05 * hargamouse;
+            var disc = 0.08 * hargamouse;
         } else {
             var disc = 0;
         }
         // end logika penentuan diskon
         // render harga
         // var harga = hargamouse - disc;
-        var harga = hargamouse * jumlahbeli;
-        $("#harga").val(harga);
+        // $("#harga").val(harga);
+        var total_harga = hargamouse * jumlahbeli;
+        var harga = total_harga - disc;
+        $('#harga').val(harga);
         // render harga
     }
     // end hitung harga total
-    
-    var listInput = [{
-        "namepembeli": "",
-        "barang": "",
-        "jmlbarang":"",
-        "harga":"",
-        "inptbayar":"",
-        "kembalian":"",
-        
-    }];
-    var select = document.getElementById("listSave");
-    var html = '';
-    listInput.forEach(loopSave);
-    function loopSave(item, index) {
-        html += "<td>" + item.namepembeli + "</td>";
-        html += "<td>" + item.barang + "</td>";
-        html += "<td>" + item.jmlbarang + "</td>";
-        html += "<td>" + item.harga + "</td>";
-        html += "<td>" + item.inptbayar + "</td>";
-        html += "<td>" + item.kembalian + "</td>";
-    }
-    select.innerHTML = html;
-    function selectedSave(params) {
-        $("#namapembeli").val();
-        $("#barang").val();
-        $("#jumlahbarang").val();
-        $("#harga").val();
-        $("#inputbayar").val();
-        $("#kembalian").val();
-        
-    }
-    // function simpan() {
-        // var namepembeli = document.getElementById("namapembeli").value;
-        // var barangname = document.getElementById("barang").value;
-        // var jmlbarang = document.getElementById("jumlahbarang").value;
-        // var totalhrg = document.getElementById("harga").value;
-        // var byr = document.getElementById("inputbayar").value;
-        // var kembali = document.getElementById("kembalian").innerHTML
 
-    //     document.getElementById("namepembelitable").innerHTML += "<tr>" + namepembeli + "</tr>"
-    //     document.getElementById("namebarangtable").innerHTML += "<tr>" + barangname + "</tr>"
-    //     document.getElementById("jmlbarangtable").innerHTML += "<tr>" + jmlbarang + "</tr>"
-    //     document.getElementById("tothargatable").innerHTML += "<tr>" + totalhrg + "</tr>"
-    //     document.getElementById("bayartable").innerHTML += "<tr>" + byr + "</tr>"
-    //     document.getElementById("kembaliantable").innerHTML += "<tr>" + kembali + "</tr>"
+    function simpan() {
+        var nama_pembeli = $("#namapembeli").val();
+        var nama_barang = $("#barang").val();
+        var qty_request = $("#qty_request").val();
+        var total_harga = $("#harga").val();
+        var uang_tunai = $("#uang_tunai").val();
+        var kembalian = $("#kembalian").val();
+        $("#nama_pembeli").val(nama_pembeli);
+        $("#nama_barang").val(nama_barang);
+        $("#qty").val(qty_request);
+        $("#total_harga_barang").val(total_harga);
+        $("#dibayar").val(uang_tunai);
+        $("#hasil_kembalian").val(kembalian);
+    }
+
+    // function hitungkembalian(params) {
+
     // }
 
-
     function hitungkembalian() {
-        var total = (document.pembeli.harga.value);
-        var uangbayar = (document.pembeli.inputbayar.value);
-        var kembalian = 0.0;
+        var bayar = $("#uang_tunai").val();
+        var total_harga = $("#harga").val();
+        var hitung_kembali = bayar - total_harga;
+        $("#kembalian").val(hitung_kembali);
+        // var total = (document.pembeli.inputtotal.value);
+        // var uangbayar = (document.forminput.inputbayar.value);
+        // var kembalian = 0.0;
 
-        kembalian = uangbayar - total;
+        // kembalian = uangbayar - total;
 
-        document.pembeli.inputkembalian.value = eval(kembalian);
+        // document.forminput.inputkembalian.value = eval(kembalian);
     }
 </script>
 <!-- Image and text -->
