@@ -1,133 +1,140 @@
 <!doctype html>
 <html lang="en">
+<head>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <title>Penjualan Barang</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate&family=Fredoka+One&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate&family=Fredoka+One&family=Press+Start+2P&display=swap');
-            .navbar {
-                background-color: #00BFFF;
-                font-family: 'Fredoka One', cursive;
-                font-size: 30px;
-                text-align: center;
-            }
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <title>Penjualan Barang</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate&family=Fredoka+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate&family=Fredoka+One&family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fascinate&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fascinate&family=Fredoka+One&display=swap');
+		.navbar {
+			background-color: #00BFFF;
+			font-family: 'Fredoka One', cursive;
+			font-size: 30px;
+			text-align: center;
+		}
 
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                transition: 0.3s;
-            }
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			transition: 0.3s;
+		}
 
-            .card:hover {
-                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-            }
-        </style>
-    </head>
-
-    <body>
-        <nav class="navbar">MOUSE Sale</nav>
-        <div class="container mt-5">
-            <h5 class="container-fluid fontbaru p-2 mb-3"
-                style="background-color:#0865c0; color: #ffffff; font-weight: bold;">Product Mouse Rexus</h5>
-            <div class="row">
-                <div class="col" style="display: flex;text-align: center;">
-                    <div class="card">
-                        <img src="https://rexus.id/wp-content/uploads/2018/09/Rexus-X8_01-1.jpg"
-                            class="card-img-top" alt="ini gambar." width="50%">
-                        <div class="card-body">
-                            <h5 class="card-title">Rexus Xierra X8</h5>
-                            <p class="card-text">Rp 100.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col" style="display: flex;text-align: center;">
-                    <div class="card">
-                        <img src="https://rexus.id/wp-content/uploads/2019/02/G10_01-1.jpg"
-                            class="card-img-top" alt="..." width="50%">
-                        <div class="card-body">
-                            <h5 class="card-title">Rexus Xierra G10</h5>
-                            <p class="card-text">Rp 175.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col" style="display: flex;text-align: center;">
-                    <div class="card">
-                        <img src="https://rexus.id/wp-content/uploads/2019/08/X12_02.jpg"
-                            class="card-img-top" alt="ini gambar." width="50%">
-                        <div class="card-body">
-                            <h5 class="card-title">Rexus Xierra X12</h5>
-                            <p class="card-text">Rp 250.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col" style="display: flex;text-align: center;">
-                    <div class="card">
-                        <img src="https://rexuszone.id/wp-content/uploads/2019/02/G7_04.jpg"
-                            class="card-img-top" alt="..." width="50%">
-                        <div class="card-body">
-                            <h5 class="card-title">Rexus Xierra G7</h5>
-                            <p class="card-text">Rp 200.000</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <form name="pembeli" style="margin-top: 8%;">
+		.card:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+		.container2{
+			width: 95%;
+		}
+		.container{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+    <nav class="navbar">MOUSE Sale</nav>
+    <div class="container mt-5">
+        <h5 class="container-fluid fontbaru p-2 mb-3"
+        style="background-color:#0865c0; color: #ffffff; font-weight: bold;">Product Mouse Rexus</h5>
+        <div class="row">
+            <div class="col" style="display: flex;text-align: center;">
+                <div class="card">
+					<img src="https://rexus.id/wp-content/uploads/2018/09/Rexus-X8_01-1.jpg"
+					class="card-img-top" alt="ini gambar." width="50%">
+					<div class="card-body">
+						<h5 class="card-title">Rexus Xierra X8</h5>
+						<p class="card-text">Rp 100.000</p>
+					</div>
+				</div>
+			</div>
+			<div class="col" style="display: flex;text-align: center;">
+				<div class="card">
+					<img src="https://rexus.id/wp-content/uploads/2019/02/G10_01-1.jpg"
+					class="card-img-top" alt="..." width="50%">
+					<div class="card-body">
+						<h5 class="card-title">Rexus Xierra G10</h5>
+						<p class="card-text">Rp 175.000</p>
+					</div>
+				</div>
+			</div>
+			<div class="col" style="display: flex;text-align: center;">
+				<div class="card">
+					<img src="https://rexus.id/wp-content/uploads/2019/08/X12_02.jpg"
+					class="card-img-top" alt="ini gambar." width="50%">
+					<div class="card-body">
+						<h5 class="card-title">Rexus Xierra X12</h5>
+						<p class="card-text">Rp 250.000</p>
+					</div>
+				</div>
+			</div>
+			<div class="col" style="display: flex;text-align: center;">
+				<div class="card">
+					<img src="https://rexuszone.id/wp-content/uploads/2019/02/G7_04.jpg"
+					class="card-img-top" alt="..." width="50%">
+					<div class="card-body">
+						<h5 class="card-title">Rexus Xierra G7</h5>
+						<p class="card-text">Rp 200.000</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <center>
+        <div class="container2">
+            <form name="pembeli" onsubmit="event.preventDefault()" style="margin-top: 8%;">
                 <div class="form-group">
                     <div class="row">
-
-                        <!-- BAG INPUT! -->
+                        <!-- BAGIAN INPUT -->
                         <div class="col-sm">
                             <div class="card text-white">
-                                <h5 class="card-header bg-primary text-center" style="font-size: 2em; font-family: 'Press Start 2P', cursive;">Form Input</h5>
-                                <div class="card-body">
+                                <h2 class="card-header bg-primary text-center" style="font-family: 'Fredoka One', cursive;">FORM INPUT</h2>
+								<div class="card-body">
                                     <table class="table table-borderless">
                                         <tr>
-                                            <td>Nama Pemesan:</td>
-                                            <td><input class="form-control" type="text" name="nama" id="namapembeli">
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Nama Barang:</td>
-                                            <td>
-                                                <!-- show pop up table product -->
-                                                <input placeholder="Select Product" type="text" data-toggle="modal"
-                                                    data-type="pilih-product" data-target="#Mproduct"
-                                                    style="cursor:pointer;" name="barang" id="barang"
-                                                    class="form-control input-sm" readonly="readonly">
-                                                <!-- end show pop up table product -->
-                                            </td>
+											<td>Nama Pemesan:</td>
+											<td><input class="form-control" type="text" name="nama" id="namapembeli">
+											</td>
                                         </tr>
                                         <tr>
-                                            <td>Harga Barang:</td>
-                                            <td>
-                                                <input type="text" readonly class="form-control" id="price">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jumlah Barang:</td>
-                                            <td><input class="form-control" id="qty_request" type="number"
-                                                    name="jumlahbarang">
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Total:</td>
+											<td>Nama Barang:</td>
+											<td>
+												<!-- show pop up table product -->
+												<input placeholder="Select Product" type="text" data-toggle="modal"
+												data-type="pilih-product" data-target="#Mproduct"
+												style="cursor:pointer;" name="barang" id="barang"
+												class="form-control input-sm" readonly="readonly">
+												<!-- end show pop up table product -->
+											</td>
+										</tr>
+										<tr>
+											<td>Harga Barang:</td>
+											<td>
+												<input type="text" readonly class="form-control" id="price">
+											</td>
+										</tr>
+										<tr>
+											<td>Jumlah Barang:</td>
+											<td><input class="form-control" id="qty_request" type="number"
+												name="jumlahbarang" min="0">
+											</td>
+										</tr>
+										<tr>
+											<td>Total Harga:</td>
                                             <td><input readonly class="form-control" type="text" name="harga"
-                                                    id="harga"></td>
-                                        </tr>
-
+                                                id="harga"></td>
+										</tr>
                                         <tr>
                                             <td>Uang Tunai:</td>
                                             <td><input class="form-control" type="text" id="uang_tunai"
-                                                    name="inputbayar"></td>
+                                                name="inputbayar"></td>
                                         </tr>
                                         <tr>
                                             <td colspan="2">
@@ -135,97 +142,91 @@
                                                     onclick="hitungtotal()">Total</button>
                                             </td>
                                         </tr>
-
-
-                                        <td colspan="2">
-                                            <input class="form-control btn-outline-dark" type="button" value="Bayar"
-                                                id="uangdiberikan" onclick="hitungkembalian()">
-                                        </td>
-
-                                        <tr>
-                                            <td><label>Kembalian:</label></td>
-                                            <td><input class="form-control" type="text" id="kembalian">
-                                            </td>
-                                        </tr>
-
                                         <tr>
                                             <td colspan="2">
+                                                <input class="form-control btn-outline-dark" type="button" value="Bayar"
+                                                    id="uangdiberikan" onclick="hitungkembalian()">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Kembalian:</label></td>
+                                            <td><input class="form-control" type="text" id="kembalian"></td>
+                                        </tr>
+                                        <tr>
+											<td colspan="2">
                                                 <div class="row">
                                                     <div class="col-sm">
                                                         <input class="form-control btn-outline-primary" type="button"
-                                                            value="Beli" onclick="simpan()"><br>
-                                                    </div>
-                                                    <div class="col-sm">
-                                                        <input class="form-control btn-outline-danger" type="reset"
-                                                            value="Hapus">
+                                                        value="Masukan Keranjang" id="savekeranjang" onclick="simpankeranjang()">
+                                                        <button class="btn btn-warning col-sm-12" type="submit" id="saveupdate" onclick="updatedata()">Update Data</button>
                                                     </div>
                                                 </div>
-                                            </td>
-                                        </tr>
+											</td>
+										</tr>
                                     </table>
                                 </div>
                             </div>
                         </div>
                         &emsp;
-                        &emsp;
-                        <!-- BAGIAN OUTPUT! -->
+                        <!-- Bagian keranjang belanja -->
                         <div class="col-sm">
+                            <h2 class="card-header bg-primary text-center text-white" 
+                            style="font-family: 'Fredoka One', cursive;">KERANJANG BELANJA</h2>
                             <div class="card text-white">
-                                <h5 class="card-header bg-primary text-center" style="font-size: 2em; font-family: 'Press Start 2P', cursive;">Output</h5>
                                 <div class="card-body">
-                                    <table class="table table-borderless" id="hasil">
-                                        <tr>
-                                            <td>Nama Pembeli</td>
-                                            <td><input class="form-control" id="nama_pembeli" type="text" disabled>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Nama Barang</td>
-                                            <td><output class="form-control" id="nama_barang" type="text" disabled>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Jumlah Barang</td>
-                                            <td><output class="form-control" id="qty" type="text" disabled>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Total Harga</td>
-                                            <td><output class="form-control" id="total_harga_barang" type="text"
-                                                    disabled>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Dibayar</td>
-                                            <td><output class="form-control" id="dibayar" type="text" disabled>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Kembalian</td>
-                                            <td><output class="form-control" id="hasil_kembalian" type="text" disabled->
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-border" style="text-align: center;">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">No</th>
+													<th scope="col" id="pembeliname">Nama Pembeli</th>
+													<th scope="col" id="namebarang">Nama Barang</th>
+													<th scope="col" id="amountbarang">Jumlah Barang</th>
+                                                    <th scope="col" id="pricetotal">Total Harga</th>
+                                                    <th scope="col" id="getpaid">Dibayar</th>
+                                                    <th scope="col" id="changeback">Kembalian</th>
+													<th scope="col">Action</th>
+												</tr>    
+                                            </thead>
+                                            <tbody id="tampilkeranjang"></tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </form>
         </div>
-        <div class="modal fade in product" tabindex="-1" id="Mproduct" role="dialog" data-keyboard="false"
-            data-backdrop="static">
-            <div class="modal-dialog modal-detail" role="document" style="width:1000px;">
-                <div class="modal-content">
-                    <div class="col-xs-1 col-xs-offset-11">
-                        <button type="button" class="close" title="Close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true" style="font-size: 30px">&times;</span></button>
-                    </div>
+        
+        <!-- Bagian output -->
+        <div class="table-responsive">
+            <table class="table table-bordered" style="width: 80%; margin-top: 4%; text-align: center;">
+                <thead class="bg-primary text-white">
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama Pembeli</th>
+                        <th scope="col">Nama Barang</th>
+                        <th scope="col">Jumlah Barang</th>
+                        <th scope="col">Total Harga</th>
+                        <th scope="col">Dibayar</th>
+                        <th scope="col">Kembalian</th>
+                        <th scope="col">Action</th>
+                    </tr>    
+                </thead>
+                <tbody id="tampiloutput"></tbody>
+            </table>
+        </div>
+    </center>
+    
+    <!-- Select Product -->
+    <div class="modal fade in product" tabindex="-1" id="Mproduct" role="dialog" data-keyboard="false"
+    data-backdrop="static">
+        <div class="modal-dialog modal-detail" role="document" style="width:1000px;">
+            <div class="modal-content">
+                <div class="col-xs-1 col-xs-offset-11">
+                    <button type="button" class="close" title="Close" data-dismiss="modal" aria-label="Close"><span 
+                        aria-hidden="true" style="font-size: 30px">&times;</span></button>
                     <div class="modal-header">
                         <h2 class="modal-title" id="title-detail">Select Product</h2>
                     </div>
@@ -239,138 +240,396 @@
                                         <th align="center">Tools</th>
                                     </tr>
                                 </thead>
-                                <tbody id="tableListProduct">
-
-                                </tbody>
+                                <tbody id="tableListProduct"></tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+    
+    <!-- Bagian data pembelian -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Data Pembelian</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="nama">Nama Pembeli</label>
+                        <input type="text" class="form-control" id="modalpembeli" readonly>
 
+                        <label for="namabarang">Nama Barang</label>
+                        <input type="text" class="form-control" id="modalbarang" readonly>
+                    
+                        <label for="jumbarang">Jumlah Barang</label>
+                        <input type="text" class="form-control" id="modaljumlah" readonly>
+                    
+                        <label for="total">Total Harga</label>
+                        <input class="form-control" type="text" name="inputharga" id="modalharga" readonly>
+
+                        <label for="uang">Uang Yang Dibayar</label>
+                        <input class="form-control"  id="modaluangtunai" name="dibayar" readonly>
+
+                        <label for="kembali">Kembalian Anda</label>
+                        <input name="inputkembalian" class="form-control" id="modalkembalian" readonly>
+                        <button type="button" class="btn btn-primary shadow-sm mt-2" onclick="beli()" data-dismiss="modal">Beli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian detail pesanan -->
+    <div class="modal fade" id="modalDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Detail Pembelian</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+
+                        <label for="nama">Nama Anda</label>
+                        <input type="text" class="form-control" id="modalnama" readonly>
+                    
+                        <label for="namabarang">Nama Barang</label>
+                        <input type="text" class="form-control" id="modalnabar" readonly>
+                    
+                        <label for="jumbarang">Jumlah Barang</label>
+                        <input type="text" class="form-control" id="modaljumbar" readonly>
+                    
+                        <label for="total">Total Harga</label>
+                        <input class="form-control" type="text" name="inputharga" id="modaltotal" readonly>
+
+                        <label for="uang">Uang Yang Dibayar</label>
+                        <input class="form-control"  id="modaluangbayar" name="dibayar" readonly>
+
+                        <label for="kembali">Kembalian Anda</label>
+                        <input name="inputkembalian" class="form-control" id="modalchange" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
+
 <script>
+
     //data product
     var listProduct = [{
-            "name": "Rexus Xierra X8",
-            "val": "Rexus Xierra X8",
-            "price": 100000,
-        },
-        {
-            "name": "Rexus Xierra G10",
-            "val": "Rexus Xierra G10",
-            "price": 175000,
-        },
-        {
-            "name": "Rexus Xierra X12",
-            "val": "Rexus Xierra X12",
-            "price": 250000,
-        },
-        {
-            "name": "Rexus Xierra G7",
-            "val": "Rexus Xierra G7",
-            "price": 200000,
-        },
+        "name": "Rexus Xierra X8",
+        "val": "Rexus Xierra X8",
+        "price": 100000,
+    },
+    {
+        "name": "Rexus Xierra G10",
+        "val": "Rexus Xierra G10",
+        "price": 175000,
+    },
+    {
+        "name": "Rexus Xierra X12",
+        "val": "Rexus Xierra X12",
+        "price": 250000,
+    },
+    {
+        "name": "Rexus Xierra G7",
+        "val": "Rexus Xierra G7",
+        "price": 200000,
+    },
     ];
     // end data product
-
+    
     // looping and render data product to list table
     var select = document.getElementById("tableListProduct");
     var html = '';
     listProduct.forEach(loopProduct);
-
+    
     function loopProduct(item, index) {
         html += "<tr>";
         html += "<td>" + item.name + "</td>";
         html += "<td>" + item.price + "</td>";
         html += "<td>" + "<button type='button' class='btn btn-primary' onclick='selectedProduct(" + JSON.stringify(
-                item) +
-            ")'>+</button>" +
-            "</td>";
+            item) +")'>+</button>" + "</td>";
     }
+    
     select.innerHTML = html;
     // end  looping and render data product to list table
-
-
+    
     // select product
     function selectedProduct(params) {
         $("#barang").val(params.name);
         $("#price").val(params.price);
         $('#Mproduct').modal('hide');
     }
-    // end select product
-
-    // hitung harga total
+    
+    // hitung harga total di form input
     function hitungtotal() {
         var form = document.pembeli;
         var hargamouse = $("#price").val();
-        // var nmbarang = form.pilihbarang.value;
         var nmbarang = $("#barang").val();
         var jumlahbeli = eval(form.jumlahbarang.value);
-
+        
         // logika penentu diskon
         if (jumlahbeli >= 5) {
             var disc = 0.20 * hargamouse;
         } else if (jumlahbeli < 5 && jumlahbeli >= 3) {
-            var disc = 0.08 * hargamouse;
+        	var disc = 0.08 * hargamouse;
         } else {
             var disc = 0;
         }
-        // end logika penentuan diskon
-        // render harga
-        // var harga = hargamouse - disc;
-        // $("#harga").val(harga);
+        
         var total_harga = hargamouse * jumlahbeli;
         var harga = total_harga - disc;
         $('#harga').val(harga);
-        // render harga
     }
-    // end hitung harga total
+    
+    // Bagian button update data
+    var ganti = document.getElementById("namapembeli").value
+    if (ganti == "") {
+        document.getElementById("savekeranjang").style.display = "inline"
+        document.getElementById("saveupdate").style.display = "none"
+    }
+    
+    var namapemesan = []
+    var namabarang = []
+    var jmlbarang = []
+    var totalharga = []
+    var uangtunai = []
+    var kembali = []
+    
+    var tampildata = document.getElementById('tampilkeranjang')
+    
+    //Menampilkan data
+    function show() {
+        tampildata.innerHTML = ""
+        for(i = 0; i<namapemesan.length;i++){
+            var nodata = i+1
+            tampildata.innerHTML += 
+            "<tr>"+
+                "<th>"+nodata+"</th>"+
+                "<td>"+namapemesan[i]+"</td>"+
+                "<td>"+namabarang[i]+"</td>"+
+                "<td>"+jmlbarang[i]+"</td>"+
+                "<td>"+totalharga[i]+"</td>"+
+                "<td>"+uangtunai[i]+"</td>"+
+                "<td>"+kembali[i]+"</td>"+
+                "<td>"+
+                    "<button class='btn btn-primary m-2' onclick='edit("+i+")'>Edit</button>"+
+                    "<button class='btn btn-danger' onclick='hapus("+i+")'>Delete</button>"+
+                    "<button class='btn btn-primary m-2' data-toggle='modal' data-target='#modal' onclick='buy("+i+")'>Beli</button>"+
+                "</td>"+
+            "</tr>"
+        }
+    }
+    
+    // ambil data dari form
+    function simpankeranjang() {
+        var namepembeli = document.getElementById('namapembeli').value 
+        var namebarang = document.getElementById('barang').value
+        var jumbarang = document.getElementById('qty_request').value
+        var totalhrg = document.getElementById('harga').value
+        var uangbayar = document.getElementById('uang_tunai').value
+        var kembalianhrg = document.getElementById('kembalian').value
+        
+        if (namepembeli == '') {
+            swal("Harap masukan semua data!")
+        } else {
+            
+            // simpan data ke array. push berfungsi untuk menambahkan data dari belakang
+            namapemesan.push(namepembeli)
+            namabarang.push(namebarang)
+            jmlbarang.push(jumbarang)
+            totalharga.push(totalhrg)
+            uangtunai.push(uangbayar)
+            kembali.push(kembalianhrg)
 
-    function simpan() {
-        var nama_pembeli = $("#namapembeli").val();
-        var nama_barang = $("#barang").val();
-        var qty_request = $("#qty_request").val();
-        var total_harga = $("#harga").val();
-        var uang_tunai = $("#uang_tunai").val();
-        var kembalian = $("#kembalian").val();
-        $("#nama_pembeli").val(nama_pembeli);
-        $("#nama_barang").val(nama_barang);
-        $("#qty").val(qty_request);
-        $("#total_harga_barang").val(total_harga);
-        $("#dibayar").val(uang_tunai);
-        $("#hasil_kembalian").val(kembalian);
+            // mereset data di form secara otomatis
+            document.getElementById('namapembeli').value = ""
+            document.getElementById('barang').value = ""
+            document.getElementById('price').value = ""
+            document.getElementById('qty_request').value = ""
+            document.getElementById('harga').value = ""
+            document.getElementById('uang_tunai').value = ""
+            document.getElementById('kembalian').value = ""
+
+            // tampil data
+            show()
+        }
+    }
+    
+    // untuk mendelete data
+    function hapus(i){
+        if (confirm("Anda yakin ingin menghapus data?")) {
+            namapemesan.splice(i,1)
+            namabarang.splice(i,1)
+            jmlbarang.splice(i,1)
+            totalharga.splice(i,1)
+            uangtunai.splice(i,1)
+            kembali.splice(i,1)
+            show()
+        }
+    }
+    
+    // fuction beli barang
+    function buy(i) {
+        document.getElementById('modalpembeli').value = namapemesan[i]
+        document.getElementById('modalbarang').value = namabarang[i]
+        document.getElementById('modaljumlah').value = jmlbarang[i]
+        document.getElementById('modalharga').value = totalharga[i]
+        document.getElementById('modaluangtunai').value = uangtunai[i]
+        document.getElementById('modalkembalian').value = kembali[i]
+        show()
+    }
+    
+    // Bagian edit data
+    var index = []
+    function edit(i) {
+        document.getElementById('namapembeli').value = namapemesan[i]
+        document.getElementById('barang').value = namabarang[i]
+        document.getElementById('qty_request').value = jmlbarang[i]
+        document.getElementById("savekeranjang").style.display = "none"
+        document.getElementById("saveupdate").style.display = "inline"
+        
+        index.push(i)
     }
 
-    // function hitungkembalian(params) {
-
-    // }
-
+    // bagian update data
+    function updatedata() {
+        var updatenama = document.getElementById('namapembeli').value
+        var updatebarang = document.getElementById('barang').value
+        var updatejumlah = document.getElementById('qty_request').value
+        var updateharga = document.getElementById('harga').value
+        var updateuang = document.getElementById('uang_tunai').value
+        var updatekembalian = document.getElementById('kembalian').value
+        
+        namapemesan[index] = updatenama
+        namabarang[index] = updatebarang
+        jmlbarang[index] = updatejumlah
+        totalharga[index] = updateharga
+        uangtunai[index] = updateuang
+        kembali[index] = updatekembalian
+        document.getElementById('namapembeli').value = ""
+        document.getElementById('barang').value = ""
+        document.getElementById('price').value = ""
+        document.getElementById('qty_request').value = ""
+        document.getElementById('harga').value = ""
+        document.getElementById('uang_tunai').value = ""
+        document.getElementById('kembalian').value = ""
+        document.getElementById("savekeranjang").style.display = "inline"
+        document.getElementById("saveupdate").style.display = "none"
+        show()
+        index.pop()
+    }
+    show()
+    
+    // function transaksi harga
+    function transaksi() {
+        var form = document.pembeli;
+        var totalbayar = $("#jumlahbayar").val();
+        var nobarang = $("#no_barang").val();
+        
+        var total_transaksi = totalbayar * nobarang
+        $('#harga').val(total_transaksi);
+    }
+    
+    // function hitung kembalian
     function hitungkembalian() {
         var bayar = $("#uang_tunai").val();
-        var total_harga = $("#harga").val();
-        var hitung_kembali = bayar - total_harga;
+        var total_transaksi = $("#harga").val();
+        var hitung_kembali = bayar - total_transaksi;
         $("#kembalian").val(hitung_kembali);
-        // var total = (document.pembeli.inputtotal.value);
-        // var uangbayar = (document.forminput.inputbayar.value);
-        // var kembalian = 0.0;
-
-        // kembalian = uangbayar - total;
-
-        // document.forminput.inputkembalian.value = eval(kembalian);
     }
+    
+    // mengambil data dari keranjang
+    var namabeli = []
+    var barangname = []
+    var barangjml = []
+    var hargatotal = []
+    var uang_bayar = []
+    var change = []
+    
+    var tampil = document.getElementById('tampiloutput')
+    //Menampilkan data
+    function showData() {
+        tampil.innerHTML = ""
+        for(i = 0; i<namabeli.length;i++){
+            var nomor = i+1
+            const matauang = 'Rp.'
+            tampil.innerHTML += 
+            "<tr>"+
+                "<th>"+nomor+"</th>"+
+                "<td>"+namabeli[i]+"</td>"+
+                "<td>"+barangname[i]+"</td>"+
+                "<td>"+barangjml[i]+"</td>"+
+                "<td>"+matauang + hargatotal[i]+"</td>"+
+                "<td>"+matauang + uang_bayar[i]+"</td>"+
+                "<td>"+matauang + change[i]+"</td>"+
+                "<td>"+
+                    "<button class='btn btn-info m-2' data-toggle='modal' data-target='#modalDetail' onclick='detail("+i+")'>Detail</button>"+
+                    "<button class='btn btn-danger' onclick='remove("+i+")'>Delete</button>"+
+                "</td>"+
+            "</tr>"
+        }
+    }
+    
+    // ambil data dari modal box
+    function beli() {
+        var namebuyer = document.getElementById('modalpembeli').value
+        var namegoods = document.getElementById('modalbarang').value
+        var barangamount = document.getElementById('modaljumlah').value
+        var totalprice = document.getElementById('modalharga').value
+        var paymoney = document.getElementById('modaluangtunai').value
+        var moneychange = document.getElementById('modalkembalian').value
+        
+        // simpan data ke array. push berfungsi untuk menambahkan data dari belakang
+        namabeli.push(namebuyer)
+        barangname.push(namegoods)
+        barangjml.push(barangamount)
+        hargatotal.push(totalprice)
+        uang_bayar.push(paymoney)
+        change.push(moneychange)
+        showData()
+    }
+    
+    // function untuk menghapus data
+    function remove(i){
+        if (confirm("Anda yakin ingin menghapus data?")) {
+            namabeli.splice(i,1)
+            barangname.splice(i,1)
+            barangjml.splice(i,1)
+            hargatotal.splice(i,1)
+            uang_bayar.splice(i,1)
+            change.splice(i,1)
+            showData()
+        }
+    }
+
+    // function detail pesanan
+    function detail(i) {
+        document.getElementById('modalnama').value = namabeli[i]
+        document.getElementById('modalnabar').value = barangname[i]
+        document.getElementById('modaljumbar').value = barangjml[i]
+        document.getElementById('modaltotal').value = hargatotal[i]
+        document.getElementById('modaluangbayar').value = uang_bayar[i]
+        document.getElementById('modalchange').value = change[i]
+        showData()
+    }
+    showData()
+    
 </script>
-<!-- Image and text -->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
